@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Technology Lab Experiments</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: #101c32;
+      --panel-2: #162544;
+      --text: #eaf2ff;
+      --accent: #5eead4;
+      --accent-2: #60a5fa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top, #17325f 0%, var(--bg) 70%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+    }
+    .badge {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(94,234,212,0.15);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+      color: white;
+    }
+    .subtitle {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #c9d7f2;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 20px;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.1);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .card p { line-height: 1.6; color: #dce8ff; }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #04101d;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .button:hover { filter: brightness(1.05); }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="badge">🌐 Web Technology Lab</div>
+      <h1>Explore the Experiments</h1>
+      <p class="subtitle">A sleek, modern landing page for your two web technology lab experiments.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Experiment 1</h2>
+          <p>HTML fundamentals and content structure.</p>
+          <a class="button" href="08_July/exp1.html">Open Experiment 1</a>
+        </div>
+        <div class="card">
+          <h2>Experiment 2</h2>
+          <p>HTML form design and interactive elements.</p>
+          <a class="button" href="21_July/EXP2.html">Open Experiment 2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
